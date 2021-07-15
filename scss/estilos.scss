@@ -1,0 +1,169 @@
+@import url('HTTPS://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap');
+@import "main";
+@import "variables";
+
+#siteHeader{
+	position: fixed;
+	background: $main-gradient;
+	border-bottom-right-radius: 20px;
+	border-bottom-left-radius: 20px;
+	z-index: 100;
+    font-weight: 500;
+}
+a.navbar-brand{
+    font-size: 1.8rem;
+    border-right: 8px solid #d200c2;
+    border-left: 8px solid #66fcf1;
+    border-radius: 25px;
+    padding: 5px 0.5em;
+    transition: 0.3s all ease 0s;
+    &:hover{
+        transform: scale(1.05);
+    }
+}
+div.dropdown-menu.show {
+    background: #e5e5e5;
+    border: none;
+    border-top: solid 4px #d200c2;
+    border-bottom: solid 4px #66fcf1;
+    border-radius: 20px;
+    margin: auto;
+    width:min-content;
+    & a.dropdown-item{
+        text-align: center;
+        color: #16302F;
+        transition: all 0.2s ease 0s;
+        &:hover{
+            transform: scale(1.02);
+            background: transparent;
+            color: #66fcf1;
+        }
+    }
+}
+.cuerpo{
+	padding-top: $padding-header;
+	display: grid;
+	grid-template-areas:
+	"destacados"
+    "sale"
+    "compromiso";
+	grid-template-rows: auto;
+	grid-row-gap: 15px;
+	justify-items: center;
+	margin: auto;
+    & a.cuerpo__destacados, a.cuerpo__sale{
+        text-decoration: none;
+    }
+    &__home--titulos{
+        font-size: 2.188rem;
+        color: #16302F;
+        font-weight: 700;
+        text-align: center;
+        text-decoration: none;
+        padding: 30px;
+    }
+    &__destacados{
+        grid-row: 1;
+        grid-column: 1;
+        grid-area: destacados;
+        border: 3px solid #0b0c10;
+        border-radius: 20px;
+        width: 100%;
+        z-index: 98;
+        transition: all 0.3s ease 0s;
+        &:hover{
+            background-color: rgba(12, 36, 58, 0.5);
+            transform: scale(1.05);
+            color: #66fcf1;
+        }
+    }
+    &__sale{
+        grid-row: 2;
+        grid-column: 1;
+        grid-area: sale;
+        border: 3px solid #0b0c10;
+        border-radius: 20px;
+        width: 100%;
+        z-index: 98;
+        transition: all 0.3s ease 0s;
+        &:hover{
+            background-color: rgba(12, 36, 58, 0.5);
+            transform: scale(1.05);
+            color: #66fcf1;
+        }
+    }
+    &__compromiso{
+        background-image: linear-gradient(rgba(71, 8, 135, 0.5),rgba(9, 24, 73, 0.5)), url(../media/ecoCotton.gif);
+        background-position: center;
+        background-size: cover;
+        border-radius: 20px;
+        width: 100%;
+        height: min-content;
+        grid-row: 3;
+        grid-column: 1;
+        grid-area: compromiso;
+        margin-bottom: 20px;
+        &--titulo{
+            font-size: 2.188rem;
+            color: #66fcf1;
+            font-weight: 700;
+            text-align: center;
+            text-decoration: none;
+            padding: 30px;
+        }
+        &--parrafo{
+            text-align: center;
+            font-size: 0.938rem;
+            color: #e5e5e5;
+            padding: 30px;
+            font-weight: 500;
+        }
+    }
+}
+.chat{
+	position: fixed;
+	height: 50px;
+	width: 50px;
+	bottom: 35px;
+	right: 15px;
+	z-index: 99;
+}
+
+/* SECCIONES EN GENERAL */
+
+.cuerpo-secciones{
+	padding-top: $padding-header;
+	height: 100%;
+	margin: auto;
+    &--titulo{
+        font-weight: 700;
+        font-size:3rem;
+        text-align: center;
+        padding-bottom: 20px;
+        color: #1f2833;
+    }
+}
+
+/* FORMULARIO RECIBIDO */
+
+@import "form";
+
+/* SECCION PRODUCTOS */
+
+@import "productos";
+
+/* SECCION SUCURSALES */
+
+@import "sucursales";
+
+/* FOOTER */
+
+@import "footer";
+
+/* MEDIA QUERIES */
+
+@import "media-queries";
+
+/* MODAL */
+
+@import "modal";

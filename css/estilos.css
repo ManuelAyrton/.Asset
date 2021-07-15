@@ -1,0 +1,525 @@
+@import url("HTTPS://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap");
+html {
+  height: 100%;
+}
+
+body {
+  background-image: url(../media/patronFondo_mob.jpg);
+  background-position: center center;
+  background-size: cover;
+  background-attachment: fixed;
+  font-family: 'Poppins', sans-serif !important;
+  font-weight: 300;
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+  z-index: 100;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+#siteHeader {
+  position: fixed;
+  background: linear-gradient(142deg, rgba(0, 78, 91, 0.9) 0%, rgba(23, 0, 77, 0.9) 50%, rgba(52, 0, 78, 0.9) 100%);
+  border-bottom-right-radius: 20px;
+  border-bottom-left-radius: 20px;
+  z-index: 100;
+  font-weight: 500;
+}
+
+a.navbar-brand {
+  font-size: 1.8rem;
+  border-right: 8px solid #d200c2;
+  border-left: 8px solid #66fcf1;
+  border-radius: 25px;
+  padding: 5px 0.5em;
+  transition: 0.3s all ease 0s;
+}
+
+a.navbar-brand:hover {
+  transform: scale(1.05);
+}
+
+div.dropdown-menu.show {
+  background: #e5e5e5;
+  border: none;
+  border-top: solid 4px #d200c2;
+  border-bottom: solid 4px #66fcf1;
+  border-radius: 20px;
+  margin: auto;
+  width: min-content;
+}
+
+div.dropdown-menu.show a.dropdown-item {
+  text-align: center;
+  color: #16302F;
+  transition: all 0.2s ease 0s;
+}
+
+div.dropdown-menu.show a.dropdown-item:hover {
+  transform: scale(1.02);
+  background: transparent;
+  color: #66fcf1;
+}
+
+.cuerpo {
+  padding-top: 100px;
+  display: grid;
+  grid-template-areas: "destacados" "sale" "compromiso";
+  grid-template-rows: auto;
+  grid-row-gap: 15px;
+  justify-items: center;
+  margin: auto;
+}
+
+.cuerpo a.cuerpo__destacados, .cuerpo a.cuerpo__sale {
+  text-decoration: none;
+}
+
+.cuerpo__home--titulos {
+  font-size: 2.188rem;
+  color: #16302F;
+  font-weight: 700;
+  text-align: center;
+  text-decoration: none;
+  padding: 30px;
+}
+
+.cuerpo__destacados {
+  grid-row: 1;
+  grid-column: 1;
+  grid-area: destacados;
+  border: 3px solid #0b0c10;
+  border-radius: 20px;
+  width: 100%;
+  z-index: 98;
+  transition: all 0.3s ease 0s;
+}
+
+.cuerpo__destacados:hover {
+  background-color: rgba(12, 36, 58, 0.5);
+  transform: scale(1.05);
+  color: #66fcf1;
+}
+
+.cuerpo__sale {
+  grid-row: 2;
+  grid-column: 1;
+  grid-area: sale;
+  border: 3px solid #0b0c10;
+  border-radius: 20px;
+  width: 100%;
+  z-index: 98;
+  transition: all 0.3s ease 0s;
+}
+
+.cuerpo__sale:hover {
+  background-color: rgba(12, 36, 58, 0.5);
+  transform: scale(1.05);
+  color: #66fcf1;
+}
+
+.cuerpo__compromiso {
+  background-image: linear-gradient(rgba(71, 8, 135, 0.5), rgba(9, 24, 73, 0.5)), url(../media/ecoCotton.gif);
+  background-position: center;
+  background-size: cover;
+  border-radius: 20px;
+  width: 100%;
+  height: min-content;
+  grid-row: 3;
+  grid-column: 1;
+  grid-area: compromiso;
+  margin-bottom: 20px;
+}
+
+.cuerpo__compromiso--titulo {
+  font-size: 2.188rem;
+  color: #66fcf1;
+  font-weight: 700;
+  text-align: center;
+  text-decoration: none;
+  padding: 30px;
+}
+
+.cuerpo__compromiso--parrafo {
+  text-align: center;
+  font-size: 0.938rem;
+  color: #e5e5e5;
+  padding: 30px;
+  font-weight: 500;
+}
+
+.chat {
+  position: fixed;
+  height: 50px;
+  width: 50px;
+  bottom: 35px;
+  right: 15px;
+  z-index: 99;
+}
+
+/* SECCIONES EN GENERAL */
+.cuerpo-secciones {
+  padding-top: 100px;
+  height: 100%;
+  margin: auto;
+}
+
+.cuerpo-secciones--titulo {
+  font-weight: 700;
+  font-size: 3rem;
+  text-align: center;
+  padding-bottom: 20px;
+  color: #1f2833;
+}
+
+/* FORMULARIO RECIBIDO */
+.cuerpo-secciones__formulario {
+  font-weight: 500;
+  color: #e5e5e5;
+  background: linear-gradient(146deg, rgba(0, 101, 117, 0.7) 0%, rgba(34, 0, 112, 0.7) 44%, rgba(79, 3, 116, 0.7) 100%);
+  border-radius: 20px;
+  padding: 15px 30px;
+  height: 100%;
+  margin: auto;
+}
+
+/* SECCION PRODUCTOS */
+.producto-contenedor {
+  height: 430px;
+  background-color: #0b0c10;
+  border-top: solid 6px #d200c2;
+  border-bottom: solid 6px #66fcf1;
+  border-radius: 25px;
+  color: #e5e5e5;
+  text-align: center;
+  min-width: 250px;
+  max-width: 250px;
+  transition: all 0.3s ease 0s;
+}
+
+.producto-contenedor:hover {
+  transform: scale(1.05);
+}
+
+.producto-contenedor__sale {
+  background-color: #0b0c10;
+  border-top: solid 6px #d200c2;
+  border-bottom: solid 6px #66fcf1;
+  border-radius: 25px;
+  color: #e5e5e5;
+  text-align: center;
+  min-width: 250px;
+  max-width: 250px;
+  transition: all 0.3s ease 0s;
+  height: 470px;
+}
+
+.producto-contenedor__sale:hover {
+  transform: scale(1.05);
+}
+
+.producto-contenedor__imagen {
+  align-self: center;
+  border-radius: 21px;
+  height: 250px;
+  width: 250px;
+}
+
+.producto-contenedor__descripcion--titulo {
+  padding-top: 20px;
+  color: #66fcf1;
+  text-align: center;
+  font-weight: 500;
+  font-size: 1.375rem;
+}
+
+.producto-contenedor__descripcion--info {
+  min-height: 50px;
+}
+
+.producto-contenedor__caracteristicas--titulo {
+  padding-bottom: 40px;
+  color: #66fcf1;
+  text-align: center;
+  font-weight: 500;
+  font-size: 1.375rem;
+}
+
+.producto-contenedor__caracteristicas--bullet {
+  list-style: inside url(../media/bullet1.png);
+}
+
+.producto-contenedor__precio {
+  padding-bottom: 55px;
+  text-align: center;
+  font-weight: 500;
+  font-size: 1.375;
+  font-weight: 700;
+  background: linear-gradient(146deg, rgba(253, 29, 29, 0.7) 0%, rgba(164, 58, 180, 0.7) 44%, rgba(102, 252, 241, 0.7) 100%);
+  border-radius: 10px;
+  padding: 5px;
+  margin: 0;
+}
+
+.producto-contenedor__precio-sale {
+  margin-bottom: 10px;
+  color: #B50000;
+  text-decoration: line-through;
+}
+
+.contenedorProductos {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.masterContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.miCol-12 {
+  width: 100%;
+}
+
+.miCol-md {
+  width: 33.33333%;
+}
+
+/* SECCION SUCURSALES */
+.cuerpo-secciones__sucursales {
+  padding: 10px;
+  text-align: center;
+}
+
+.cuerpo-secciones__sucursales__alcorta {
+  width: 300px;
+  display: inline-block;
+  border-top: solid 4px #d200c2;
+  border-bottom: solid 4px #66fcf1;
+  background-color: #0b0c10;
+  border-radius: 20px;
+  padding: 10px 50px 20px;
+  color: #e5e5e5;
+  margin: 10px;
+  font-weight: 300;
+  transition: all 0.3s ease 0s;
+}
+
+.cuerpo-secciones__sucursales__alcorta:hover {
+  transform: scale(1.05);
+}
+
+.cuerpo-secciones__sucursales__alcorta--titulo {
+  color: #66fcf1;
+  font-weight: 500;
+  font-size: 1.5rem;
+  line-height: 200%;
+}
+
+.cuerpo-secciones__sucursales__palermo {
+  width: 300px;
+  display: inline-block;
+  border-top: solid 4px #d200c2;
+  border-bottom: solid 4px #66fcf1;
+  background-color: #0b0c10;
+  border-radius: 20px;
+  padding: 10px 50px 20px;
+  color: #e5e5e5;
+  margin: 10px;
+  font-weight: 300;
+  transition: all 0.3s ease 0s;
+}
+
+.cuerpo-secciones__sucursales__palermo:hover {
+  transform: scale(1.05);
+}
+
+.cuerpo-secciones__sucursales__palermo--titulo {
+  color: #66fcf1;
+  font-weight: 500;
+  font-size: 1.5rem;
+  line-height: 200%;
+}
+
+/* FOOTER */
+.ftr.container-fluid {
+  border-top: 7px solid #d200c2;
+  border-top-left-radius: 25px;
+  border-top-right-radius: 25px;
+  color: #E5E5E5;
+  background-color: #00938D;
+}
+
+.ftr.container-fluid .footer__contacto {
+  font-weight: 300;
+  text-align: center;
+}
+
+.ftr.container-fluid .footer__contacto--titulo {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: #1f2833;
+}
+
+.ftr.container-fluid .footer__pagos {
+  text-align: center;
+}
+
+.ftr.container-fluid .footer__pagos ul li {
+  list-style-type: none;
+}
+
+.ftr.container-fluid .footer__pagos--titulo {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: #1f2833;
+}
+
+.ftr.container-fluid .footer__pagos ul li img {
+  height: 30px;
+  margin: 10px;
+}
+
+.ftr.container-fluid .footer__redes {
+  text-align: center;
+}
+
+.ftr.container-fluid .footer__redes--titulo {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: #1f2833;
+}
+
+.ftr.container-fluid .footer__redes ul li {
+  list-style-type: none;
+  padding-top: 10px;
+  font-weight: 300;
+  transition: all 0.3s ease 0s;
+}
+
+.ftr.container-fluid .footer__redes ul li a {
+  text-decoration: none;
+  color: #e5e5e5;
+  transition: all 0.3s ease 0s;
+}
+
+.ftr.container-fluid .footer__redes ul li img {
+  padding-top: 0px;
+  height: 30px;
+  margin-bottom: 0px;
+}
+
+.mi-col-footer-1 {
+  width: 33.33333%;
+}
+
+.mi-col-footer-2 {
+  width: 66.66667%;
+}
+
+.mi-col-footer-3 {
+  width: 100%;
+}
+
+.bg-instagram:hover {
+  background: linear-gradient(12deg, #ffd915 0%, #e99526 31%, #a32d30 67%, #3b22c3 100%);
+  padding: 0.5em 0.75em;
+  border-radius: 20px;
+  transition: all 0.3s ease 0s;
+}
+
+.bg-facebook:hover {
+  background: #0c5cc4;
+  padding: 0.5em 0.75em;
+  border-radius: 20px;
+  transition: all 0.3s ease 0s;
+}
+
+.bg-twitter:hover {
+  background: #1da1f2;
+  padding: 0.5em 0.75em;
+  border-radius: 20px;
+  transition: all 0.3s ease 0s;
+}
+
+.fondo-footer {
+  color: #1f2833;
+  font-size: 0.625rem;
+  background-color: #00938D;
+}
+
+.fondo-footer__copyright {
+  padding-top: 20px;
+}
+
+.fondo-footer__hoja {
+  display: block;
+  width: 50px;
+  height: 50px;
+  margin: auto;
+}
+
+.fondo-footer__derechos {
+  padding-top: 20px;
+  text-align: right;
+}
+
+/* MEDIA QUERIES */
+@media all and (min-width: 768px) {
+  body {
+    background-image: url(../media/patronFondo.jpg);
+  }
+  .masterContainer {
+    flex-direction: row;
+    justify-content: space-around;
+    max-width: 1200px;
+    margin: auto;
+  }
+  .footer__pagos ul li img {
+    height: 30px;
+    margin: 10px;
+  }
+  div.dropdown-menu.show {
+    background: #e5e5e5;
+  }
+}
+
+@media all and (min-width: 992px) {
+  .cuerpo {
+    grid-template-areas: "destacados sale" "compromiso compromiso";
+    grid-template-columns: 50% 50%;
+    grid-column-gap: 25px;
+    justify-items: space-between;
+    align-items: center;
+  }
+  .cuerpo__home--titulos {
+    font-size: 3.125rem;
+  }
+}
+
+/* MODAL */
+.modal-form, .botonEnviar, .botonLimpiar {
+  color: #66fcf1;
+  padding: 0.5em 0.75em;
+  font-weight: 500;
+  border: 0px;
+  border-radius: 25px;
+  background-color: #16302f;
+  cursor: pointer;
+  transition: all 0.3s ease 0s;
+}
+
+.modal-form:hover, .botonEnviar:hover, .botonLimpiar:hover {
+  transform: scale(1.1);
+  color: #66fcf1;
+  background-color: #16302f;
+  border-left: 4px solid #d200c2;
+  border-right: 4px solid #66fcf1;
+}
+/*# sourceMappingURL=estilos.css.map */

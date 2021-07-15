@@ -1,0 +1,32 @@
+@media all and (min-width: 768px){
+	body{
+		background-image: url(../media/patronFondo.jpg);
+	}
+	.masterContainer{
+		flex-direction: row;
+		justify-content: space-around;
+		max-width: 1200px;
+		margin: auto;
+	}
+	.footer__pagos ul li img{
+		height: 30px;
+		margin: 10px;
+	}
+	div.dropdown-menu.show {
+		background: #e5e5e5;
+}
+}
+@media all and (min-width: 992px){
+	.cuerpo{
+		grid-template-areas:
+		"destacados sale"
+		"compromiso compromiso";
+		grid-template-columns: 50% 50%;
+		grid-column-gap: 25px;
+		justify-items: space-between;
+		align-items: center;
+	}
+	.cuerpo__home--titulos{
+		font-size: 3.125rem;
+	}
+}

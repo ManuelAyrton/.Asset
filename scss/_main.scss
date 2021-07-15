@@ -1,0 +1,52 @@
+html{
+	height: 100%;
+}
+body{
+	background-image: url(../media/patronFondo_mob.jpg);
+	background-position: center center;
+	background-size: cover;
+	background-attachment: fixed;
+	font-family: 'Poppins', sans-serif !important;
+	font-weight: 300;
+	min-height: 100%;
+	display: flex;
+	flex-direction: column;
+	z-index: 100;
+}
+ul{
+	margin: 0;
+	padding: 0;
+}
+
+@mixin button-style{
+	color: #66fcf1;
+	padding: 0.5em 0.75em;
+	font-weight: 500;
+	border: 0px;
+	border-radius: 25px;
+	background-color: #16302f;
+	cursor: pointer;
+	transition: all 0.3s ease 0s;
+	&:hover{
+		transform: scale(1.1);
+		color: #66fcf1;
+		background-color: #16302f;
+		border-left:4px solid #d200c2;
+		border-right: 4px solid #66fcf1;
+	}
+}
+
+@mixin contenedorDeProductos{
+    background-color: #0b0c10;
+    border-top: solid 6px #d200c2;
+    border-bottom: solid 6px #66fcf1;
+	border-radius: 25px;
+	color: #e5e5e5;
+	text-align: center;
+    min-width: 250px;
+    max-width: 250px;
+    transition: all 0.3s ease 0s;
+    &:hover{
+        transform: scale(1.05);
+    }
+}

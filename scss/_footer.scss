@@ -1,0 +1,90 @@
+.ftr.container-fluid{
+	border-top: 7px solid #d200c2;
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+	color: #E5E5E5;
+	background-color: #00938D;
+    .footer{
+        &__contacto{
+            font-weight: 300;
+            text-align: center;
+            &--titulo{
+                font-size: 1.25rem;
+                font-weight: 700;
+                color: #1f2833;
+            }
+        }
+        &__pagos{
+            text-align: center;
+            & ul li{
+                list-style-type: none;
+            }
+            &--titulo{
+                font-size: 1.25rem;
+                font-weight: 700;
+                color: #1f2833;
+            }
+            & ul li img{
+                height: 30px;
+                margin: 10px;
+            }
+        }
+        &__redes{
+            text-align: center;
+            &--titulo{
+                font-size: 1.25rem;
+                font-weight: 700;
+                color: #1f2833;
+            }
+            & ul li{
+                list-style-type: none;
+                padding-top: 10px;
+                font-weight: 300;transition: all 0.3s ease 0s;
+            }
+            & ul li a{
+                text-decoration: none;
+                color: #e5e5e5;
+                transition: all 0.3s ease 0s;
+            }
+            &  ul li img{
+                padding-top: 0px;
+                height: 30px;
+                margin-bottom: 0px;
+            }
+        }
+    }
+}
+
+@for $v from 1 through 3{
+    .mi-col-footer-#{$v}{
+        width: ($ancho/3)*$v;
+    }
+}
+
+@each $red, $background in $redes{
+    .bg-#{$red}:hover{
+        background: $background;
+        padding: 0.5em 0.75em;
+        border-radius: 20px;
+        transition: all 0.3s ease 0s;
+    }
+}
+
+.fondo-footer{
+	color: #1f2833;
+	font-size: 0.625rem;
+	background-color: #00938D;
+    &__copyright{
+        padding-top: 20px;
+    }
+    &__hoja{
+        display: block;
+        width: 50px;
+        height: 50px;
+        margin: auto;
+    }
+    &__derechos{
+        padding-top: 20px;
+        text-align: right;
+    }
+}

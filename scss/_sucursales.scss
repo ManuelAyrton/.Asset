@@ -1,0 +1,52 @@
+
+.cuerpo-secciones{
+    &__sucursales{
+        padding: 10px;
+        text-align: center;
+        &__alcorta{
+            width: 300px;
+            display: inline-block;
+            border-top: solid 4px #d200c2;
+            border-bottom: solid 4px #66fcf1;
+            background-color: #0b0c10;
+            border-radius: 20px;
+            padding: 10px 50px 20px;
+            color: #e5e5e5;
+            margin: 10px;
+            font-weight: 300;
+            transition: all 0.3s ease 0s;
+            &:hover{
+                transform: scale(1.05);
+            }
+            &--titulo{
+                color: #66fcf1;
+                font-weight: 500;
+                font-size: 1.5rem;
+                line-height: 200%;
+            }
+        }
+        &__palermo{
+            width: 300px;
+            display: inline-block;
+            border-top: solid 4px #d200c2;
+            border-bottom: solid 4px #66fcf1;
+            background-color: #0b0c10;
+            border-radius: 20px;
+            padding: 10px 50px 20px;
+            color: #e5e5e5;
+            margin: 10px;
+            font-weight: 300;
+            transition: all 0.3s ease 0s;
+            &:hover{
+                transform: scale(1.05);
+            }
+            &--titulo{
+                color: #66fcf1;
+                font-weight: 500;
+                font-size: 1.5rem;
+                line-height: 200%;
+            }
+        }
+    }
+}
+
