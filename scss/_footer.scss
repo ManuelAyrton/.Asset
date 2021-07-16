@@ -1,9 +1,9 @@
 .ftr.container-fluid{
-	border-top: 7px solid #d200c2;
+	border-top: 7px solid #f067e4;
     border-top-left-radius: 25px;
     border-top-right-radius: 25px;
-	color: #E5E5E5;
-	background-color: #00938D;
+	color: #16302f;
+	background: linear-gradient(360deg, #57b3af, #a23a99);
     .footer{
         &__contacto{
             font-weight: 300;
@@ -43,7 +43,7 @@
             }
             & ul li a{
                 text-decoration: none;
-                color: #e5e5e5;
+                color:#16302f;
                 transition: all 0.3s ease 0s;
             }
             &  ul li img{
@@ -72,8 +72,8 @@
 
 .fondo-footer{
 	color: #1f2833;
-	font-size: 0.625rem;
-	background-color: #00938D;
+	font-size: 0.8rem;
+    background-color: #57b3af;
     &__copyright{
         padding-top: 20px;
     }

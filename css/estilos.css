@@ -23,7 +23,7 @@ ul {
 
 #siteHeader {
   position: fixed;
-  background: linear-gradient(142deg, rgba(0, 78, 91, 0.9) 0%, rgba(23, 0, 77, 0.9) 50%, rgba(52, 0, 78, 0.9) 100%);
+  background: linear-gradient(160deg, rgba(77, 135, 125, 0.9) 0%, rgba(75, 19, 148, 0.9) 50%, rgba(120, 0, 138, 0.9) 100%);
   border-bottom-right-radius: 20px;
   border-bottom-left-radius: 20px;
   z-index: 100;
@@ -32,8 +32,8 @@ ul {
 
 a.navbar-brand {
   font-size: 1.8rem;
-  border-right: 8px solid #d200c2;
-  border-left: 8px solid #66fcf1;
+  border-right: 8px solid #66fcf1;
+  border-left: 8px solid #d200c2;
   border-radius: 25px;
   padding: 5px 0.5em;
   transition: 0.3s all ease 0s;
@@ -100,9 +100,12 @@ div.dropdown-menu.show a.dropdown-item:hover {
 }
 
 .cuerpo__destacados:hover {
-  background-color: rgba(12, 36, 58, 0.5);
+  background-color: rgba(104, 0, 130, 0.5);
   transform: scale(1.05);
   color: #66fcf1;
+  border: none;
+  border-top: solid 4px #d200c2;
+  border-bottom: solid 4px #66fcf1;
 }
 
 .cuerpo__sale {
@@ -117,9 +120,12 @@ div.dropdown-menu.show a.dropdown-item:hover {
 }
 
 .cuerpo__sale:hover {
-  background-color: rgba(12, 36, 58, 0.5);
+  background-color: rgba(104, 0, 130, 0.5);
   transform: scale(1.05);
   color: #66fcf1;
+  border: none;
+  border-top: solid 4px #d200c2;
+  border-bottom: solid 4px #66fcf1;
 }
 
 .cuerpo__compromiso {
@@ -127,6 +133,8 @@ div.dropdown-menu.show a.dropdown-item:hover {
   background-position: center;
   background-size: cover;
   border-radius: 20px;
+  border-top: solid 4px #d200c2;
+  border-bottom: solid 4px #66fcf1;
   width: 100%;
   height: min-content;
   grid-row: 3;
@@ -349,11 +357,11 @@ div.dropdown-menu.show a.dropdown-item:hover {
 
 /* FOOTER */
 .ftr.container-fluid {
-  border-top: 7px solid #d200c2;
+  border-top: 7px solid #f067e4;
   border-top-left-radius: 25px;
   border-top-right-radius: 25px;
-  color: #E5E5E5;
-  background-color: #00938D;
+  color: #16302f;
+  background: linear-gradient(360deg, #57b3af, #a23a99);
 }
 
 .ftr.container-fluid .footer__contacto {
@@ -405,7 +413,7 @@ div.dropdown-menu.show a.dropdown-item:hover {
 
 .ftr.container-fluid .footer__redes ul li a {
   text-decoration: none;
-  color: #e5e5e5;
+  color: #16302f;
   transition: all 0.3s ease 0s;
 }
 
@@ -450,8 +458,8 @@ div.dropdown-menu.show a.dropdown-item:hover {
 
 .fondo-footer {
   color: #1f2833;
-  font-size: 0.625rem;
-  background-color: #00938D;
+  font-size: 0.8rem;
+  background-color: #57b3af;
 }
 
 .fondo-footer__copyright {

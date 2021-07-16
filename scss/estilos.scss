@@ -12,8 +12,8 @@
 }
 a.navbar-brand{
     font-size: 1.8rem;
-    border-right: 8px solid #d200c2;
-    border-left: 8px solid #66fcf1;
+    border-right: 8px solid #66fcf1;
+    border-left: 8px solid #d200c2;
     border-radius: 25px;
     padding: 5px 0.5em;
     transition: 0.3s all ease 0s;
@@ -72,9 +72,12 @@ div.dropdown-menu.show {
         z-index: 98;
         transition: all 0.3s ease 0s;
         &:hover{
-            background-color: rgba(12, 36, 58, 0.5);
+            background-color: rgba(104, 0, 130, 0.5);
             transform: scale(1.05);
             color: #66fcf1;
+            border: none;
+            border-top: solid 4px #d200c2;
+            border-bottom: solid 4px #66fcf1;
         }
     }
     &__sale{
@@ -87,9 +90,12 @@ div.dropdown-menu.show {
         z-index: 98;
         transition: all 0.3s ease 0s;
         &:hover{
-            background-color: rgba(12, 36, 58, 0.5);
+            background-color: rgba(104, 0, 130, 0.5);
             transform: scale(1.05);
             color: #66fcf1;
+            border: none;
+            border-top: solid 4px #d200c2;
+            border-bottom: solid 4px #66fcf1;
         }
     }
     &__compromiso{
@@ -97,6 +103,8 @@ div.dropdown-menu.show {
         background-position: center;
         background-size: cover;
         border-radius: 20px;
+        border-top: solid 4px #d200c2;
+        border-bottom: solid 4px #66fcf1;
         width: 100%;
         height: min-content;
         grid-row: 3;
