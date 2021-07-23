@@ -92,7 +92,7 @@ div.dropdown-menu.show a.dropdown-item:hover {
   grid-row: 1;
   grid-column: 1;
   grid-area: destacados;
-  border: 3px solid #0b0c10;
+  border: 3px solid #16302F;
   border-radius: 20px;
   width: 100%;
   z-index: 98;
@@ -112,7 +112,7 @@ div.dropdown-menu.show a.dropdown-item:hover {
   grid-row: 2;
   grid-column: 1;
   grid-area: sale;
-  border: 3px solid #0b0c10;
+  border: 3px solid #16302F;
   border-radius: 20px;
   width: 100%;
   z-index: 98;
@@ -181,7 +181,7 @@ div.dropdown-menu.show a.dropdown-item:hover {
   font-size: 3rem;
   text-align: center;
   padding-bottom: 20px;
-  color: #1f2833;
+  color: #16302F;
 }
 
 /* FORMULARIO RECIBIDO */

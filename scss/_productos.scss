@@ -14,7 +14,7 @@
     &__descripcion{
         &--titulo{
             padding-top: 20px;
-            color: #66fcf1;
+            color: $color-cyan;
             text-align: center;
             font-weight: 500;
             font-size: 1.375rem;
@@ -26,7 +26,7 @@
     &__caracteristicas{
         &--titulo{
             padding-bottom: 40px;
-            color: #66fcf1;
+            color: $color-cyan;
             text-align: center;
             font-weight: 500;
             font-size: 1.375rem;

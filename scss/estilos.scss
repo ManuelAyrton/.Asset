@@ -12,8 +12,8 @@
 }
 a.navbar-brand{
     font-size: 1.8rem;
-    border-right: 8px solid #66fcf1;
-    border-left: 8px solid #d200c2;
+    border-right: 8px solid $color-cyan;
+    border-left: 8px solid $color-rosa;
     border-radius: 25px;
     padding: 5px 0.5em;
     transition: 0.3s all ease 0s;
@@ -22,21 +22,21 @@ a.navbar-brand{
     }
 }
 div.dropdown-menu.show {
-    background: #e5e5e5;
+    background: $color-offwhite;
     border: none;
-    border-top: solid 4px #d200c2;
-    border-bottom: solid 4px #66fcf1;
+    border-top: solid 4px $color-rosa;
+    border-bottom: solid 4px $color-cyan;
     border-radius: 20px;
     margin: auto;
     width:min-content;
     & a.dropdown-item{
         text-align: center;
-        color: #16302F;
+        color: $color-cyan-oscuro;
         transition: all 0.2s ease 0s;
         &:hover{
             transform: scale(1.02);
             background: transparent;
-            color: #66fcf1;
+            color: $color-cyan;
         }
     }
 }
@@ -56,7 +56,7 @@ div.dropdown-menu.show {
     }
     &__home--titulos{
         font-size: 2.188rem;
-        color: #16302F;
+        color: $color-cyan-oscuro;
         font-weight: 700;
         text-align: center;
         text-decoration: none;
@@ -66,7 +66,7 @@ div.dropdown-menu.show {
         grid-row: 1;
         grid-column: 1;
         grid-area: destacados;
-        border: 3px solid #0b0c10;
+        border: 3px solid $color-cyan-oscuro;
         border-radius: 20px;
         width: 100%;
         z-index: 98;
@@ -74,17 +74,17 @@ div.dropdown-menu.show {
         &:hover{
             background-color: rgba(104, 0, 130, 0.5);
             transform: scale(1.05);
-            color: #66fcf1;
+            color: $color-cyan;
             border: none;
-            border-top: solid 4px #d200c2;
-            border-bottom: solid 4px #66fcf1;
+            border-top: solid 4px $color-rosa;
+            border-bottom: solid 4px $color-cyan;
         }
     }
     &__sale{
         grid-row: 2;
         grid-column: 1;
         grid-area: sale;
-        border: 3px solid #0b0c10;
+        border: 3px solid $color-cyan-oscuro;
         border-radius: 20px;
         width: 100%;
         z-index: 98;
@@ -92,10 +92,10 @@ div.dropdown-menu.show {
         &:hover{
             background-color: rgba(104, 0, 130, 0.5);
             transform: scale(1.05);
-            color: #66fcf1;
+            color: $color-cyan;
             border: none;
-            border-top: solid 4px #d200c2;
-            border-bottom: solid 4px #66fcf1;
+            border-top: solid 4px $color-rosa;
+            border-bottom: solid 4px $color-cyan;
         }
     }
     &__compromiso{
@@ -103,8 +103,8 @@ div.dropdown-menu.show {
         background-position: center;
         background-size: cover;
         border-radius: 20px;
-        border-top: solid 4px #d200c2;
-        border-bottom: solid 4px #66fcf1;
+        border-top: solid 4px $color-rosa;
+        border-bottom: solid 4px $color-cyan;
         width: 100%;
         height: min-content;
         grid-row: 3;
@@ -113,7 +113,7 @@ div.dropdown-menu.show {
         margin-bottom: 20px;
         &--titulo{
             font-size: 2.188rem;
-            color: #66fcf1;
+            color: $color-cyan;
             font-weight: 700;
             text-align: center;
             text-decoration: none;
@@ -122,7 +122,7 @@ div.dropdown-menu.show {
         &--parrafo{
             text-align: center;
             font-size: 0.938rem;
-            color: #e5e5e5;
+            color: $color-offwhite;
             padding: 30px;
             font-weight: 500;
         }
@@ -148,7 +148,7 @@ div.dropdown-menu.show {
         font-size:3rem;
         text-align: center;
         padding-bottom: 20px;
-        color: #1f2833;
+        color: $color-cyan-oscuro;
     }
 }
 

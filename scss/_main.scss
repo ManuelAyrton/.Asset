@@ -19,7 +19,7 @@ ul{
 }
 
 @mixin button-style{
-	color: #66fcf1;
+	color: $color-cyan;
 	padding: 0.5em 0.75em;
 	font-weight: 500;
 	border: 0px;
@@ -29,19 +29,19 @@ ul{
 	transition: all 0.3s ease 0s;
 	&:hover{
 		transform: scale(1.1);
-		color: #66fcf1;
+		color: $color-cyan;
 		background-color: #16302f;
-		border-left:4px solid #d200c2;
-		border-right: 4px solid #66fcf1;
+		border-left:4px solid $color-rosa;
+		border-right: 4px solid $color-cyan;
 	}
 }
 
 @mixin contenedorDeProductos{
     background-color: #0b0c10;
-    border-top: solid 6px #d200c2;
-    border-bottom: solid 6px #66fcf1;
+    border-top: solid 6px $color-rosa;
+    border-bottom: solid 6px $color-cyan;
 	border-radius: 25px;
-	color: #e5e5e5;
+	color: $color-offwhite;
 	text-align: center;
     min-width: 250px;
     max-width: 250px;
