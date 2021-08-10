@@ -4,11 +4,8 @@ html {
 }
 
 body {
-  background-image: url(../media/patronFondo_mob.jpg);
-  background-position: center center;
-  background-size: cover;
-  background-attachment: fixed;
-  font-family: 'Poppins', sans-serif !important;
+  background: #e5e5e5;
+  font-family: 'Poppins', sans-serif;
   font-weight: 300;
   min-height: 100%;
   display: flex;
@@ -357,11 +354,11 @@ div.dropdown-menu.show a.dropdown-item:hover {
 
 /* FOOTER */
 .ftr.container-fluid {
-  border-top: 7px solid #f067e4;
+  border-top: 7px solid #d200c2;
   border-top-left-radius: 25px;
   border-top-right-radius: 25px;
-  color: #16302f;
-  background: linear-gradient(360deg, #57b3af, #a23a99);
+  color: #16302F;
+  background: #cafaff;
 }
 
 .ftr.container-fluid .footer__contacto {
@@ -372,7 +369,7 @@ div.dropdown-menu.show a.dropdown-item:hover {
 .ftr.container-fluid .footer__contacto--titulo {
   font-size: 1.25rem;
   font-weight: 700;
-  color: #1f2833;
+  color: #16302F;
 }
 
 .ftr.container-fluid .footer__pagos {
@@ -386,12 +383,17 @@ div.dropdown-menu.show a.dropdown-item:hover {
 .ftr.container-fluid .footer__pagos--titulo {
   font-size: 1.25rem;
   font-weight: 700;
-  color: #1f2833;
+  color: #16302F;
 }
 
 .ftr.container-fluid .footer__pagos ul li img {
-  height: 30px;
+  height: 25px;
   margin: 10px;
+  transition: all 0.3s ease 0s;
+}
+
+.ftr.container-fluid .footer__pagos ul li img:hover {
+  transform: scale(1.2);
 }
 
 .ftr.container-fluid .footer__redes {
@@ -401,65 +403,43 @@ div.dropdown-menu.show a.dropdown-item:hover {
 .ftr.container-fluid .footer__redes--titulo {
   font-size: 1.25rem;
   font-weight: 700;
-  color: #1f2833;
+  color: #16302F;
 }
 
 .ftr.container-fluid .footer__redes ul li {
   list-style-type: none;
-  padding-top: 10px;
+  padding-top: 15px;
   font-weight: 300;
   transition: all 0.3s ease 0s;
 }
 
+.ftr.container-fluid .footer__redes ul li:hover {
+  transform: scale(1.05);
+}
+
 .ftr.container-fluid .footer__redes ul li a {
   text-decoration: none;
-  color: #16302f;
+  color: #16302F;
   transition: all 0.3s ease 0s;
+}
+
+.ftr.container-fluid .footer__redes ul li a:hover {
+  background-color: #89f7ffb8;
+  border: 0;
+  border-radius: 20px;
+  padding: 0.4em 0.5em;
 }
 
 .ftr.container-fluid .footer__redes ul li img {
   padding-top: 0px;
-  height: 30px;
-  margin-bottom: 0px;
-}
-
-.mi-col-footer-1 {
-  width: 33.33333%;
-}
-
-.mi-col-footer-2 {
-  width: 66.66667%;
-}
-
-.mi-col-footer-3 {
-  width: 100%;
-}
-
-.bg-instagram:hover {
-  background: linear-gradient(12deg, #ffd915 0%, #e99526 31%, #a32d30 67%, #3b22c3 100%);
-  padding: 0.5em 0.75em;
-  border-radius: 20px;
-  transition: all 0.3s ease 0s;
-}
-
-.bg-facebook:hover {
-  background: #0c5cc4;
-  padding: 0.5em 0.75em;
-  border-radius: 20px;
-  transition: all 0.3s ease 0s;
-}
-
-.bg-twitter:hover {
-  background: #1da1f2;
-  padding: 0.5em 0.75em;
-  border-radius: 20px;
-  transition: all 0.3s ease 0s;
+  height: 25px;
+  margin-left: 3px;
 }
 
 .fondo-footer {
-  color: #1f2833;
+  color: #16302F;
   font-size: 0.8rem;
-  background-color: #57b3af;
+  background-color: #cafaff;
 }
 
 .fondo-footer__copyright {
@@ -480,9 +460,6 @@ div.dropdown-menu.show a.dropdown-item:hover {
 
 /* MEDIA QUERIES */
 @media all and (min-width: 768px) {
-  body {
-    background-image: url(../media/patronFondo.jpg);
-  }
   .masterContainer {
     flex-direction: row;
     justify-content: space-around;
@@ -518,7 +495,7 @@ div.dropdown-menu.show a.dropdown-item:hover {
   font-weight: 500;
   border: 0px;
   border-radius: 25px;
-  background-color: #16302f;
+  background-color: #16302F;
   cursor: pointer;
   transition: all 0.3s ease 0s;
 }
@@ -526,7 +503,7 @@ div.dropdown-menu.show a.dropdown-item:hover {
 .modal-form:hover, .botonEnviar:hover, .botonLimpiar:hover {
   transform: scale(1.1);
   color: #66fcf1;
-  background-color: #16302f;
+  background-color: #16302F;
   border-left: 4px solid #d200c2;
   border-right: 4px solid #66fcf1;
 }

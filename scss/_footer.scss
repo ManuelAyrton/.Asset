@@ -1,9 +1,9 @@
 .ftr.container-fluid{
-	border-top: 7px solid #f067e4;
+	border-top: 7px solid $color-rosa;
     border-top-left-radius: 25px;
     border-top-right-radius: 25px;
-	color: #16302f;
-	background: linear-gradient(360deg, #57b3af, #a23a99);
+	color: $color-cyan-oscuro;
+	background: $color-cyan-fondo;
     .footer{
         &__contacto{
             font-weight: 300;
@@ -11,7 +11,7 @@
             &--titulo{
                 font-size: 1.25rem;
                 font-weight: 700;
-                color: #1f2833;
+                color: $color-cyan-oscuro;
             }
         }
         &__pagos{
@@ -22,11 +22,15 @@
             &--titulo{
                 font-size: 1.25rem;
                 font-weight: 700;
-                color: #1f2833;
+                color: $color-cyan-oscuro;
             }
             & ul li img{
-                height: 30px;
+                height: 25px;
                 margin: 10px;
+                    transition: all 0.3s ease 0s;
+                &:hover{
+                    transform:scale(1.2)
+                }
             }
         }
         &__redes{
@@ -34,46 +38,41 @@
             &--titulo{
                 font-size: 1.25rem;
                 font-weight: 700;
-                color: #1f2833;
+                color: $color-cyan-oscuro;
             }
             & ul li{
                 list-style-type: none;
-                padding-top: 10px;
-                font-weight: 300;transition: all 0.3s ease 0s;
+                padding-top: 15px;
+                font-weight: 300;
+                transition: all 0.3s ease 0s;
+                &:hover{
+                    transform: scale(1.05);
+                }
             }
             & ul li a{
                 text-decoration: none;
-                color:#16302f;
+                color: $color-cyan-oscuro;
                 transition: all 0.3s ease 0s;
+                &:hover{
+                    background-color: #89f7ffb8;
+                    border: 0;
+                    border-radius:20px;
+                    padding: 0.4em 0.5em;
+                }
             }
             &  ul li img{
                 padding-top: 0px;
-                height: 30px;
-                margin-bottom: 0px;
+                height: 25px;
+                margin-left: 3px;
             }
         }
     }
 }
 
-@for $v from 1 through 3{
-    .mi-col-footer-#{$v}{
-        width: ($ancho/3)*$v;
-    }
-}
-
-@each $red, $background in $redes{
-    .bg-#{$red}:hover{
-        background: $background;
-        padding: 0.5em 0.75em;
-        border-radius: 20px;
-        transition: all 0.3s ease 0s;
-    }
-}
-
 .fondo-footer{
-	color: #1f2833;
+	color: $color-cyan-oscuro;
 	font-size: 0.8rem;
-    background-color: #57b3af;
+    background-color: $color-cyan-fondo;
     &__copyright{
         padding-top: 20px;
     }

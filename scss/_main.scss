@@ -1,12 +1,11 @@
+@import "variables";
+
 html{
 	height: 100%;
 }
 body{
-	background-image: url(../media/patronFondo_mob.jpg);
-	background-position: center center;
-	background-size: cover;
-	background-attachment: fixed;
-	font-family: 'Poppins', sans-serif !important;
+	background: $color-offwhite;
+	font-family: 'Poppins', sans-serif;
 	font-weight: 300;
 	min-height: 100%;
 	display: flex;
@@ -24,13 +23,13 @@ ul{
 	font-weight: 500;
 	border: 0px;
 	border-radius: 25px;
-	background-color: #16302f;
+	background-color: $color-cyan-oscuro;
 	cursor: pointer;
 	transition: all 0.3s ease 0s;
 	&:hover{
 		transform: scale(1.1);
 		color: $color-cyan;
-		background-color: #16302f;
+		background-color: $color-cyan-oscuro;
 		border-left:4px solid $color-rosa;
 		border-right: 4px solid $color-cyan;
 	}
