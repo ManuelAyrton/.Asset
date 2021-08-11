@@ -26,6 +26,7 @@ ul{
 	background-color: $color-cyan-oscuro;
 	cursor: pointer;
 	transition: all 0.3s ease 0s;
+	box-shadow: 3px 3px 10px $color-violeta-oscuro;
 	&:hover{
 		transform: scale(1.1);
 		color: $color-cyan;
@@ -45,6 +46,7 @@ ul{
     min-width: 250px;
     max-width: 250px;
     transition: all 0.3s ease 0s;
+	box-shadow: 5px 5px 40px $color-violeta-oscuro;
     &:hover{
         transform: scale(1.05);
     }

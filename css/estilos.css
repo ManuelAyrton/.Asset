@@ -204,6 +204,7 @@ div.dropdown-menu.show a.dropdown-item:hover {
   min-width: 250px;
   max-width: 250px;
   transition: all 0.3s ease 0s;
+  box-shadow: 5px 5px 40px #290146;
 }
 
 .producto-contenedor:hover {
@@ -220,6 +221,7 @@ div.dropdown-menu.show a.dropdown-item:hover {
   min-width: 250px;
   max-width: 250px;
   transition: all 0.3s ease 0s;
+  box-shadow: 5px 5px 40px #290146;
   height: 470px;
 }
 
@@ -311,9 +313,10 @@ div.dropdown-menu.show a.dropdown-item:hover {
   border-radius: 20px;
   padding: 10px 50px 20px;
   color: #e5e5e5;
-  margin: 10px;
+  margin: 10px 30px;
   font-weight: 300;
   transition: all 0.3s ease 0s;
+  box-shadow: 5px 5px 40px #290146;
 }
 
 .cuerpo-secciones__sucursales__alcorta:hover {
@@ -339,6 +342,7 @@ div.dropdown-menu.show a.dropdown-item:hover {
   margin: 10px;
   font-weight: 300;
   transition: all 0.3s ease 0s;
+  box-shadow: 5px 5px 40px #290146;
 }
 
 .cuerpo-secciones__sucursales__palermo:hover {
@@ -350,6 +354,20 @@ div.dropdown-menu.show a.dropdown-item:hover {
   font-weight: 500;
   font-size: 1.5rem;
   line-height: 200%;
+}
+
+.maps-responsive {
+  display: block;
+  overflow: hidden;
+  position: relative;
+  height: 400px;
+  justify-content: center;
+  margin: 30px 0 60px 0;
+}
+
+.map-responsive iframe {
+  height: 100%;
+  width: 100%;
 }
 
 /* FOOTER */
@@ -428,6 +446,7 @@ div.dropdown-menu.show a.dropdown-item:hover {
   border: 0;
   border-radius: 20px;
   padding: 0.4em 0.5em;
+  box-shadow: 3px 3px 10px #290146;
 }
 
 .ftr.container-fluid .footer__redes ul li img {
@@ -498,6 +517,7 @@ div.dropdown-menu.show a.dropdown-item:hover {
   background-color: #16302F;
   cursor: pointer;
   transition: all 0.3s ease 0s;
+  box-shadow: 3px 3px 10px #290146;
 }
 
 .modal-form:hover, .botonEnviar:hover, .botonLimpiar:hover {
