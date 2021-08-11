@@ -1,4 +1,18 @@
 @media all and (min-width: 768px){
+	.cuerpo{
+		div.container-fluid.carrusel{
+			height:700px
+		}
+		div.container.contenedor-flex{
+			flex-direction: row;
+		}
+		&__destacados{
+			margin-right: 10px;
+		}
+		&__sale{
+			margin-left: 10px;
+		}
+	}
 	.masterContainer{
 		flex-direction: row;
 		justify-content: space-around;
@@ -11,15 +25,13 @@
 	}
 	div.dropdown-menu.show {
 		background: $color-offwhite;
-}
+	}
+	img.d-block.w-100{
+		height: 700px;
+	}
 }
 @media all and (min-width: 992px){
 	.cuerpo{
-		grid-template-areas:
-		"destacados sale"
-		"compromiso compromiso";
-		grid-template-columns: 50% 50%;
-		grid-column-gap: 25px;
 		justify-items: space-between;
 		align-items: center;
 	}

@@ -40,17 +40,20 @@ div.dropdown-menu.show {
         }
     }
 }
+
+#carouselExampleIndicators{
+    height: 100%;
+}
+
 .cuerpo{
 	padding-top: $padding-header;
-	display: grid;
-	grid-template-areas:
-	"destacados"
-    "sale"
-    "compromiso";
-	grid-template-rows: auto;
-	grid-row-gap: 15px;
-	justify-items: center;
+	display: flex;
+	flex-direction: column;
 	margin: auto;
+    width: 100vw;
+    div.container-fluid.carrusel{
+        padding: 0;
+    }
     & a.cuerpo__destacados, a.cuerpo__sale{
         text-decoration: none;
     }
@@ -62,13 +65,18 @@ div.dropdown-menu.show {
         text-decoration: none;
         padding: 30px;
     }
+    div.container.contenedor-flex{
+        display: flex;
+        flex-direction: column;
+        margin: 10px auto;
+        padding: 0;
+    }
     &__destacados{
-        grid-row: 1;
-        grid-column: 1;
-        grid-area: destacados;
+        background-color: rgba(136, 255, 239, 0.289);
         border: 3px solid $color-cyan-oscuro;
         border-radius: 20px;
         width: 100%;
+        margin: 10px auto;
         z-index: 98;
         transition: all 0.3s ease 0s;
         &:hover{
@@ -81,12 +89,11 @@ div.dropdown-menu.show {
         }
     }
     &__sale{
-        grid-row: 2;
-        grid-column: 1;
-        grid-area: sale;
+        background-color: rgba(136, 255, 239, 0.289);
         border: 3px solid $color-cyan-oscuro;
         border-radius: 20px;
         width: 100%;
+        margin: 10px auto;
         z-index: 98;
         transition: all 0.3s ease 0s;
         &:hover{
@@ -107,9 +114,6 @@ div.dropdown-menu.show {
         border-bottom: solid 4px $color-cyan;
         width: 100%;
         height: min-content;
-        grid-row: 3;
-        grid-column: 1;
-        grid-area: compromiso;
         margin-bottom: 20px;
         &--titulo{
             font-size: 2.188rem;
@@ -128,6 +132,18 @@ div.dropdown-menu.show {
         }
     }
 }
+
+.carousel-indicators li {
+    width: 10px;
+    height: 10px;
+    border-radius: 100%;
+  }
+
+img.d-block.w-100{
+    object-fit: cover;
+    border-radius: 20px;
+}
+
 .chat{
 	position: fixed;
 	height: 50px;
