@@ -62,10 +62,6 @@ div.dropdown-menu.show a.dropdown-item:hover {
   color: #66fcf1;
 }
 
-#carouselExampleIndicators {
-  height: 100%;
-}
-
 .cuerpo {
   padding-top: 100px;
   display: flex;
@@ -76,6 +72,7 @@ div.dropdown-menu.show a.dropdown-item:hover {
 
 .cuerpo div.container-fluid.carrusel {
   padding: 0;
+  height: 500px;
 }
 
 .cuerpo a.cuerpo__destacados, .cuerpo a.cuerpo__sale {
@@ -172,8 +169,24 @@ div.dropdown-menu.show a.dropdown-item:hover {
 }
 
 img.d-block.w-100 {
-  object-fit: cover;
+  object-fit: scale-down;
   border-radius: 20px;
+  height: 500px;
+}
+
+img.d-block.w-100.carrusel1 {
+  background-image: url(../media/carrusel1mobile.jpg);
+  background-position: center;
+}
+
+img.d-block.w-100.carrusel2 {
+  background-image: url(../media/carrusel2mobile.jpg);
+  background-position: center;
+}
+
+img.d-block.w-100.carrusel3 {
+  background-image: url(../media/carrusel3mobile.jpg);
+  background-position: bottom;
 }
 
 .chat {
@@ -498,9 +511,6 @@ img.d-block.w-100 {
 
 /* MEDIA QUERIES */
 @media all and (min-width: 768px) {
-  .cuerpo div.container-fluid.carrusel {
-    height: 700px;
-  }
   .cuerpo div.container.contenedor-flex {
     flex-direction: row;
   }
@@ -523,8 +533,17 @@ img.d-block.w-100 {
   div.dropdown-menu.show {
     background: #e5e5e5;
   }
-  img.d-block.w-100 {
-    height: 700px;
+  img.d-block.w-100.carrusel1 {
+    background-image: url(../media/carrusel1tablet.jpg);
+    background-position: center;
+  }
+  img.d-block.w-100.carrusel2 {
+    background-image: url(../media/carrusel2tablet.jpg);
+    background-position: center;
+  }
+  img.d-block.w-100.carrusel3 {
+    background-image: url(../media/carrusel3tablet.jpg);
+    background-position: bottom;
   }
 }
 
@@ -535,6 +554,26 @@ img.d-block.w-100 {
   }
   .cuerpo__home--titulos {
     font-size: 3.125rem;
+  }
+  .cuerpo div.container-fluid.carrusel {
+    height: 650px;
+  }
+  img.d-block.w-100 {
+    object-fit: scale-down;
+    border-radius: 20px;
+    height: 650px;
+  }
+  img.d-block.w-100.carrusel1 {
+    background-image: url(../media/carrusel1.jpg);
+    background-position: center;
+  }
+  img.d-block.w-100.carrusel2 {
+    background-image: url(../media/carrusel2.jpg);
+    background-position: center;
+  }
+  img.d-block.w-100.carrusel3 {
+    background-image: url(../media/carrusel3.jpg);
+    background-position: bottom;
   }
 }
 

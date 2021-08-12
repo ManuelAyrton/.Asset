@@ -1,8 +1,5 @@
 @media all and (min-width: 768px){
 	.cuerpo{
-		div.container-fluid.carrusel{
-			height:700px
-		}
 		div.container.contenedor-flex{
 			flex-direction: row;
 		}
@@ -26,16 +23,45 @@
 	div.dropdown-menu.show {
 		background: $color-offwhite;
 	}
-	img.d-block.w-100{
-		height: 700px;
+	img.d-block.w-100.carrusel1{
+		background-image: url(../media/carrusel1tablet.jpg);
+        background-position: center;
+	}
+	img.d-block.w-100.carrusel2{
+		background-image: url(../media/carrusel2tablet.jpg);
+        background-position: center;
+	}
+	img.d-block.w-100.carrusel3{
+		background-image: url(../media/carrusel3tablet.jpg);
+        background-position: bottom;
 	}
 }
 @media all and (min-width: 992px){
 	.cuerpo{
 		justify-items: space-between;
 		align-items: center;
+		&__home--titulos{
+			font-size: 3.125rem;
+		}
+		div.container-fluid.carrusel{
+			height:650px
+		}
 	}
-	.cuerpo__home--titulos{
-		font-size: 3.125rem;
+	img.d-block.w-100{
+		object-fit: scale-down;
+		border-radius: 20px;
+		height: 650px;
+		&.carrusel1{
+			background-image: url(../media/carrusel1.jpg);
+			background-position: center;
+		}
+		&.carrusel2{
+			background-image: url(../media/carrusel2.jpg);
+			background-position: center;
+		}
+		&.carrusel3{
+			background-image: url(../media/carrusel3.jpg);
+			background-position: bottom;
+		}
 	}
 }

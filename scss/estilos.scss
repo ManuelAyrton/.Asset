@@ -41,9 +41,6 @@ div.dropdown-menu.show {
     }
 }
 
-#carouselExampleIndicators{
-    height: 100%;
-}
 
 .cuerpo{
 	padding-top: $padding-header;
@@ -53,6 +50,7 @@ div.dropdown-menu.show {
     width: 100vw;
     div.container-fluid.carrusel{
         padding: 0;
+        height: 500px;
     }
     & a.cuerpo__destacados, a.cuerpo__sale{
         text-decoration: none;
@@ -137,11 +135,24 @@ div.dropdown-menu.show {
     width: 10px;
     height: 10px;
     border-radius: 100%;
-  }
+}
 
 img.d-block.w-100{
-    object-fit: cover;
+    object-fit: scale-down;
     border-radius: 20px;
+    height: 500px;
+    &.carrusel1{
+        background-image: url(../media/carrusel1mobile.jpg);
+        background-position: center;
+    }
+    &.carrusel2{
+        background-image: url(../media/carrusel2mobile.jpg);
+        background-position: center;
+    }
+    &.carrusel3{
+        background-image: url(../media/carrusel3mobile.jpg);
+        background-position: bottom;
+    }
 }
 
 .chat{
