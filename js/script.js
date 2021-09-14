@@ -17,7 +17,7 @@ class Product {
 }
 
 const products = [];
-products.push(new Product(1, "campera", "Campera acolchada para invierno.", "9000", "../media/campera.jpg"))
+products.push(new Product(1, "campera", "Campera acolchada para invierno.", "9000", "media/campera.jpg"))
 products.push(new Product(2, "remera", "Remera amplia estilo oversized.", "2500", "media/remera.jpg"))
 products.push(new Product(3, "cargo", "Cargo amplio de cintura elástica.", "6100", "media/cargo.jpg"))
 
