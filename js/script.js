@@ -1,4 +1,57 @@
-{}
+
+//
+// Lista de productos y precios //
+//
+
+class Product {
+    constructor(id, article, info, price, img){
+        this.id = id;
+        this.article = article.toUpperCase();
+        this.info = info
+        this.price = parseFloat(price);
+        this.img =img;
+    }
+    sumaIva(){
+        this.price = this.price * 1.21;
+    }
+}
+
+const products = [];
+products.push(new Product(1, "campera", "Campera acolchada para invierno.", "9000", "../media/campera.jpg"))
+products.push(new Product(2, "remera", "Remera amplia estilo oversized.", "2500", "media/remera.jpg"))
+products.push(new Product(3, "cargo", "Cargo amplio de cintura elástica.", "6100", "media/cargo.jpg"))
+
+for (const product of products){
+    product.sumaIva();
+    console.log("El precio con IVA de un/a " + product.article + " es de $" + product.price)
+}
+
+//
+// Creación de productos en HTML
+//
+
+let padre = document.getElementById("seccionPadre")
+
+for (const product of products){
+    let newProduct = document.createElement("section");
+    newProduct.setAttribute("class", "contenedorProductos miCol-12 mx-1 miCol-md")
+    newProduct.innerHTML = `
+
+    <div class="producto-contenedor mb-3">
+    <img class="producto-contenedor__imagen" src="${product.img}" alt="Campera">
+    <div class="producto-contenedor__descripcion">
+        <h3 class="producto-contenedor__descripcion--titulo">${product.article}</h3>
+        <p class="producto-contenedor__descripcion--info">${product.info}</p>
+        <span class="producto-contenedor__precio">$ ${product.price}</span>
+    </div>
+    </div>
+
+    `
+    padre.appendChild(newProduct)
+}
+
+
+
 
 
 
