@@ -35,20 +35,44 @@ let padre = document.getElementById("seccionPadre")
 for (const product of products){
     let newProduct = document.createElement("section");
     newProduct.setAttribute("class", "contenedorProductos miCol-12 mx-1 miCol-md")
-    newProduct.innerHTML = `
-
-    <div class="producto-contenedor mb-3">
+    newProduct.innerHTML = `<div class="producto-contenedor mb-3">
     <img class="producto-contenedor__imagen" src="${product.img}" alt="Campera">
     <div class="producto-contenedor__descripcion">
         <h3 class="producto-contenedor__descripcion--titulo">${product.article}</h3>
         <p class="producto-contenedor__descripcion--info">${product.info}</p>
         <span class="producto-contenedor__precio">$ ${product.price}</span>
+		<button type="button" class="buttonAddCart">Agregar al carrito</button>
     </div>
-    </div>
+    </div>`
 
-    `
-    padre.appendChild(newProduct)
+    padre.appendChild(newProduct);
 }
+
+//
+// Agregar productos al carrito
+//
+
+let cuerpoPrincipal = document.getElementById("cuerpoPrincipal");
+
+let Items = document.getElementsByClassName("buttonAddCart")
+
+for (const Item of Items) {
+    Item.addEventListener('click', ()=>{
+
+        let alertaFlotante = document.createElement("div");
+
+        alertaFlotante.setAttribute("class","alertaFlotante")
+
+        alertaFlotante.innerHTML = `<div>Producto agregado al carrito!</div>`
+
+        cuerpoPrincipal.appendChild(alertaFlotante)
+    })
+}
+
+
+
+
+
 
 
 

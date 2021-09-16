@@ -331,6 +331,58 @@ img.d-block.w-100.carrusel3 {
   width: 33.33333%;
 }
 
+/*Agregar items al carrito*/
+.buttonAddCart {
+  font-size: 0.9rem;
+  color: #e5e5e5;
+  padding: 0.5em 0.75em;
+  font-weight: 500;
+  border: 0px;
+  border-radius: 25px;
+  background-color: #16302F;
+  cursor: pointer;
+  transition: all 0.3s ease 0s;
+}
+
+.buttonAddCart:hover {
+  transform: scale(1.05);
+  color: #66fcf1;
+  background-color: #16302F;
+  border-left: 4px solid #d200c2;
+  border-right: 4px solid #66fcf1;
+}
+
+/* Caja flotante de articulo agregado al carrito*/
+.alertaFlotante {
+  position: fixed;
+  color: #e5e5e5;
+  font-size: 1rem;
+  font-weight: 300;
+  background-color: #0b0c10;
+  border-left: 4px solid #d200c2;
+  border-right: 4px solid #66fcf1;
+  top: 85px;
+  right: -400px;
+  padding: 0.5rem 0.75rem;
+  border-radius: 25px;
+  animation: mymove 4s;
+}
+
+@keyframes mymove {
+  0% {
+    right: -400px;
+  }
+  20% {
+    right: 15px;
+  }
+  80% {
+    right: 15px;
+  }
+  100% {
+    right: -400px;
+  }
+}
+
 /* SECCION SUCURSALES */
 .cuerpo-secciones__sucursales {
   padding: 10px;

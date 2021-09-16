@@ -69,3 +69,51 @@ justify-content: center;
 .miCol-md{
     width: ($ancho/3);
 }
+
+
+/*Agregar items al carrito*/
+
+.buttonAddCart {
+    font-size: 0.9rem;
+    color: $color-offwhite;
+	padding: 0.5em 0.75em;
+	font-weight: 500;
+	border: 0px;
+	border-radius: 25px;
+	background-color: $color-cyan-oscuro;
+	cursor: pointer;
+	transition: all 0.3s ease 0s;
+	&:hover{
+		transform: scale(1.05);
+		color: $color-cyan;
+		background-color: $color-cyan-oscuro;
+		border-left:4px solid $color-rosa;
+		border-right: 4px solid $color-cyan;
+    }
+}
+
+
+
+/* Caja flotante de articulo agregado al carrito*/
+
+.alertaFlotante{
+    position: fixed;
+    color: $color-offwhite;
+    font-size: 1rem;
+    font-weight: 300;
+    background-color: #0b0c10;
+    border-left: 4px solid $color-rosa;
+    border-right: 4px solid $color-cyan;
+    top: 85px;
+    right: -400px;
+    padding: 0.5rem 0.75rem;
+    border-radius: 25px;
+    animation: mymove 4s;
+}
+
+@keyframes mymove {
+    0% {right: -400px;}
+    20% {right: 15px;}
+    80% {right: 15px;}
+    100% {right: -400px}
+  }
