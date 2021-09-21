@@ -19,10 +19,13 @@
 		<div class="container">
 			<nav class="navbar navbar-expand-lg navbar-dark">
 				<a class="navbar-brand" href="index.html">.Asset</a>
-				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
-					aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-					<span class="navbar-toggler-icon"></span>
-				</button>
+				<div class="d-flex">
+					<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
+						aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+						<span class="navbar-toggler-icon"></span>
+					</button>
+					<button class="cart" data-toggle="modal" data-target="#staticBackdrop2">CARRITO</button>
+				</div>
 				<div class="collapse navbar-collapse justify-content-end" id="navbarNavDropdown">
 					<ul class="navbar-nav text-center">
 						<li class="nav-item dropdown">
@@ -49,19 +52,46 @@
 			</nav>
 		</div>
 	</nav>
+	<!--Fin de Header-->
 
-	<!--fin de Header-->
 
 
 	<!--Cuerpo-->
-
-	<div id="cuerpoPrincipal" class="cuerpo-secciones container-fluid">
+	<div id="mainBody" class="cuerpo-secciones container-fluid">
 		<h1 class="cuerpo-secciones--titulo">.nueva temporada</h1>
-		<div id="seccionPadre" class="masterContainer mb-5">
+		<div id="parentSectionNT" class="masterContainer mb-5">
+		</div>
+		<div class="modal fade" id="staticBackdrop2" data-backdrop="static" data-keyboard="false" tabindex="-1"
+			aria-labelledby="staticBackdropLabel" aria-hidden="true">
+			<div class="modal-dialog">
+				<div class="modal-content">
+					<div class="modal-header">
+						<h5 class="modal-title" id="staticBackdropLabel">Carrito</h5>
+						<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+							<span aria-hidden="true">&times;</span>
+						</button>
+					</div>
+					<div id="modalCart" class="modal-body">
+
+					</div>
+					<div class="modal-footer">
+						<button type="button" id="eraseCart" class="btn btn-secondary" >Limpiar carrito</button>
+						<button type="button" class="btn btn-primary">Proceder al pago</button>
+					</div>
+				</div>
+			</div>
 		</div>
 	</div>
 	<!--Fin de cuerpo-->
-	<a href="https://api.whatsapp.com/send?phone=541167398193&text=Hola!%20Queria%20consultar%20sobre%20los%20siguientes%20productos..." target="_blank"><img class="chat" src="media/whatsapp.svg" alt="Chat de Whatsapp"></a><!-- CHAT WHATSAPP -->
+
+
+
+	<!--Chat de Whatsapp-->
+	<a href="https://api.whatsapp.com/send?phone=541167398193&text=Hola!%20Queria%20consultar%20sobre%20los%20siguientes%20productos..."
+		target="_blank"><img class="chat" src="media/whatsapp.svg" alt="Chat de Whatsapp"></a><!-- CHAT WHATSAPP -->
+
+
+	<!--Footer-->
 	<footer class="ftr container-fluid">
 		<!--Footer o pie de página-->
 		<div class="row footer">
@@ -111,7 +141,8 @@
 		<!--Fondo de página-->
 		<div class="row mb-3 justify-content-center">
 			<div class="fondo-footer__copyright col-4">© Copyright .asset</div>
-			<div class="col-2 col-md-1"><img class="fondo-footer__hoja" src="media/hoja.png" alt="Icono ecologico"></div>
+			<div class="col-2 col-md-1"><img class="fondo-footer__hoja" src="media/hoja.png" alt="Icono ecologico">
+			</div>
 			<div class="fondo-footer__derechos col-4">Todos los derechos reservados.</div>
 		</div>
 	</div>
@@ -189,7 +220,11 @@
 
 	<script src="js/jquery-3.5.1.slim.min.js"></script>
 	<script src="js/bootstrap.bundle.min.js"></script>
-	<script src="js/script.js"></script>
+	<script src="js/obj.js"></script>
+	<script src="js/HTMLProducts.js"></script>
+	<script src="js/renderCart.js"></script>
+	<script src="js/addToCart.js"></script>
+	<script src="js/cleanCart.js"></script>
 </body>
 
 </html>

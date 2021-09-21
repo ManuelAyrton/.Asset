@@ -62,6 +62,56 @@ div.dropdown-menu.show a.dropdown-item:hover {
   color: #66fcf1;
 }
 
+.cart {
+  background-color: transparent;
+  color: #e5e5e5;
+  align-self: center;
+  margin-left: 20px;
+  border: solid 1px;
+  padding: 0.5rem 0.75rem;
+  border-radius: 25px;
+  border-color: #e5e5e5;
+  transition: all 0.2s ease 0s;
+}
+
+.cart:hover {
+  transform: scale(1.1);
+  cursor: pointer;
+}
+
+.cartContainer {
+  display: flex;
+  flex-direction: column;
+  color: #0b0c10;
+}
+
+.cartProduct {
+  display: flex;
+  margin: 10px;
+  justify-content: space-between;
+}
+
+.cartImg {
+  display: inline-flex;
+  width: 100px;
+  border-radius: 15px;
+}
+
+.cartTitle {
+  font-size: 1rem;
+  align-self: center;
+  font-weight: 500;
+}
+
+.cartPrice {
+  align-self: center;
+  font-weight: 700;
+}
+
+.cartClose {
+  align-self: center;
+}
+
 .cuerpo {
   padding-top: 100px;
   display: flex;
@@ -300,7 +350,7 @@ img.d-block.w-100.carrusel3 {
   font-size: 1.375;
   font-weight: 700;
   background: linear-gradient(146deg, rgba(253, 29, 29, 0.7) 0%, rgba(164, 58, 180, 0.7) 44%, rgba(102, 252, 241, 0.7) 100%);
-  border-radius: 10px;
+  border-radius: 20px;
   padding: 5px;
   margin: 0;
 }
@@ -353,7 +403,7 @@ img.d-block.w-100.carrusel3 {
 }
 
 /* Caja flotante de articulo agregado al carrito*/
-.alertaFlotante {
+.floatingAlert {
   position: fixed;
   color: #e5e5e5;
   font-size: 1rem;
@@ -365,10 +415,10 @@ img.d-block.w-100.carrusel3 {
   right: -400px;
   padding: 0.5rem 0.75rem;
   border-radius: 25px;
-  animation: mymove 4s;
+  animation: myMove 4s;
 }
 
-@keyframes mymove {
+@keyframes myMove {
   0% {
     right: -400px;
   }

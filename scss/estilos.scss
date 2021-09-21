@@ -21,6 +21,7 @@ a.navbar-brand{
         transform: scale(1.05);
     }
 }
+
 div.dropdown-menu.show {
     background: $color-offwhite;
     border: none;
@@ -40,6 +41,52 @@ div.dropdown-menu.show {
         }
     }
 }
+
+// CARRITO
+.cart{
+	background-color: transparent;
+    color: $color-offwhite;
+    align-self: center;
+    margin-left: 20px;
+    border: solid 1px;
+    padding: 0.5rem 0.75rem;
+    border-radius: 25px;
+    border-color: $color-offwhite;
+    transition: all 0.2s ease 0s;
+    &:hover{
+        transform: scale(1.1);
+        cursor: pointer;
+    }
+}
+.cartContainer{
+	display: flex;
+	flex-direction: column;
+	color: #0b0c10;
+}
+.cartProduct{
+	display: flex;
+	margin: 10px;
+	justify-content: space-between;
+}
+.cartImg{
+display: inline-flex;
+width: 100px;
+border-radius: 15px;
+}
+.cartTitle{
+	font-size: 1rem;
+	align-self: center;
+	font-weight: 500;
+}
+.cartPrice{
+align-self: center;
+font-weight: 700;
+}
+.cartClose{
+	align-self: center;
+}
+
+//FIN DE CARRITO
 
 
 .cuerpo{

@@ -42,7 +42,7 @@
         font-size: 1.375;
         font-weight: 700;
         background: linear-gradient(146deg, rgba(253,29,29,0.7) 0%, rgba(164,58,180,0.7) 44%, rgba(102,252,241,0.7) 100%);
-        border-radius: 10px;
+        border-radius: 20px;
         padding: 5px;
         margin: 0;
     }
@@ -96,7 +96,7 @@ justify-content: center;
 
 /* Caja flotante de articulo agregado al carrito*/
 
-.alertaFlotante{
+.floatingAlert{
     position: fixed;
     color: $color-offwhite;
     font-size: 1rem;
@@ -108,10 +108,10 @@ justify-content: center;
     right: -400px;
     padding: 0.5rem 0.75rem;
     border-radius: 25px;
-    animation: mymove 4s;
+    animation: myMove 4s;
 }
 
-@keyframes mymove {
+@keyframes myMove {
     0% {right: -400px;}
     20% {right: 15px;}
     80% {right: 15px;}
