@@ -1,7 +1,7 @@
 // Lista de productos y precios //
 class Product {
     constructor(id, article, category, info, collection, price, img){
-        this.id = id                              //
+        this.id = id
         this.article = article.toUpperCase()
         this.category = category
         this.info = info

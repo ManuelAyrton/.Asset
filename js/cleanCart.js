@@ -1,11 +1,18 @@
 // Boton de limpiar carrito
 function clearStorage(){
     localStorage.clear()            // Limpia el localStorage completo.
-    modalCart.innerHTML = ``     // Comillas vacías limpian el espacio donde se coloca.
+    $("#modalCart").empty()         // ".empty()" vacía lo que se encuentra dentro del elemento identificado.
     savedCart = []                  // Limpia en caso de tener un array armado.
 }
 
-let eraseCart = document.getElementById("eraseCart")
+// let eraseCart = document.getElementById("eraseCart")
 
-eraseCart.onclick = clearStorage
+// eraseCart.onclick = clearStorage
 
+
+$("#eraseCart").on("click", () => {
+
+    clearStorage()
+
+    }
+)
