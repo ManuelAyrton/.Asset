@@ -1,5 +1,6 @@
 // Visualizando producto en carrito. (render)
 
+
 let savedCart = JSON.parse(localStorage.getItem("cart")) || [] // Obtiene elementos del localStorage o asigna un array vacío.
 
 function cartRender() {
@@ -18,11 +19,11 @@ function cartRender() {
                 </div>
             </div>`
 
-        )        // Agrega elemento entre tildes invertidas al HTML.
+        )           // Agrega elemento entre tildes invertidas al HTML.
     }
 }
 
-
+cartRender()        // Aunque en la función cartRender, modalCart.innerHTML este limpiando los objetos de localStorage ubicados en el carrito, productoEnCarrito, estaria tomando esos objetos del localStorage y reubicandolos de nuevo.
 
 
 // let modalCart = document.getElementById("modalCart")

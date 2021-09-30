@@ -1,16 +1,11 @@
 // Obtencion de producto y alerta de producto agregado.
-let mainBody = document.getElementById("mainBody")
+let Items = $(".buttonAddCart")
 
-let Items = document.getElementsByClassName("buttonAddCart")
 
 for (const Item of Items) {
     Item.addEventListener('click', (e)=>{
 
-        const foundProduct = products.find(product => product.id == e.target.id)
-
-        let floatingAlert = document.createElement("div")
-        floatingAlert.setAttribute("class","floatingAlert")
-        floatingAlert.innerHTML = `<div>Producto agregado al carrito!</div>`
+        const foundProduct = products.find(product => product.id == e.target.id) // En este caso ".find" estaria comparando dentro del array de "products", el id de los productos, con el id de las propiedades de las etiquetas del HTML para devolver un "foundProduct".
 
         savedCart.push(foundProduct)
 
@@ -18,10 +13,31 @@ for (const Item of Items) {
 
         console.log(foundProduct)
 
-        mainBody.appendChild(floatingAlert)
+        $("#mainBody").append(`<div class="floatingAlert">¡Producto agregado al carrito!</div>`)
+
+
+        $(".floatingAlert").fadeIn("slow").delay(1500).fadeOut("slow",
+        function() {
+            console.log("Fin de la animación floatingAlert")
+        })
+
+
+
         cartRender()
     })
 }
 
 
 
+
+
+
+
+
+
+
+
+
+// let floatingAlert = document.createElement("div")
+        // floatingAlert.setAttribute("class","floatingAlert")
+        // floatingAlert.innerHTML = `<div>¡Producto agregado al carrito!</div>

@@ -14,5 +14,27 @@ $("#eraseCart").on("click", () => {
 
     clearStorage()
 
+    $("#modalCart").append('<div class="cleanAlert">¡Carrito vaciado!</div>').css({
+        'border-radius': '25px',
+        'width': '100%',
+        'text-align': '-webkit-center'
     }
-)
+    )
+
+$(".cleanAlert").css({
+    'display': 'none',
+    'font-weight': '300',
+    'text-align': 'center',
+    'border-radius' : '25px',
+    'background-color': '#290146',
+    'color': '#e5e5e5',
+    'padding': '0.5rem 1rem',
+    'border': 'none',
+    'border-radius': '25px',
+    'width': 'max-content',
+}).fadeIn("slow").delay(1500).fadeOut("slow",
+    function() {
+        console.log("Fin de la animación cleanAlert")
+})
+
+})

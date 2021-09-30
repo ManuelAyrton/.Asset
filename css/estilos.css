@@ -404,6 +404,7 @@ img.d-block.w-100.carrusel3 {
 
 /* Caja flotante de articulo agregado al carrito*/
 .floatingAlert {
+  display: none;
   position: fixed;
   color: #e5e5e5;
   font-size: 1rem;
@@ -412,25 +413,13 @@ img.d-block.w-100.carrusel3 {
   border-left: 4px solid #d200c2;
   border-right: 4px solid #66fcf1;
   top: 85px;
-  right: -400px;
+  right: 15px;
   padding: 0.5rem 0.75rem;
   border-radius: 25px;
-  animation: myMove 4s;
 }
 
-@keyframes myMove {
-  0% {
-    right: -400px;
-  }
-  20% {
-    right: 15px;
-  }
-  80% {
-    right: 15px;
-  }
-  100% {
-    right: -400px;
-  }
+#modalCart {
+  min-height: auto;
 }
 
 /* SECCION SUCURSALES */
