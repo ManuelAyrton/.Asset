@@ -96,7 +96,7 @@ justify-content: center;
 
 /* Caja flotante de articulo agregado al carrito*/
 
-.floatingAlert{
+.floatingAlert, .floatingAlertForm{
     display: none;
     position: fixed;
     color: $color-offwhite;

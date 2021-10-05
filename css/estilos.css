@@ -20,6 +20,7 @@ ul {
 
 #siteHeader {
   position: fixed;
+  box-shadow: 0px -2px 20px #290146;
   background: linear-gradient(160deg, rgba(77, 135, 125, 0.9) 0%, rgba(75, 19, 148, 0.9) 50%, rgba(120, 0, 138, 0.9) 100%);
   border-bottom-right-radius: 20px;
   border-bottom-left-radius: 20px;
@@ -43,6 +44,7 @@ a.navbar-brand:hover {
 div.dropdown-menu.show {
   background: #e5e5e5;
   border: none;
+  box-shadow: 0px 0px 15px #290146;
   border-top: solid 4px #d200c2;
   border-bottom: solid 4px #66fcf1;
   border-radius: 20px;
@@ -287,7 +289,7 @@ img.d-block.w-100.carrusel3 {
   min-width: 250px;
   max-width: 250px;
   transition: all 0.3s ease 0s;
-  box-shadow: 5px 5px 40px #290146;
+  box-shadow: 0px 0px 30px #290146;
 }
 
 .producto-contenedor:hover {
@@ -304,7 +306,7 @@ img.d-block.w-100.carrusel3 {
   min-width: 250px;
   max-width: 250px;
   transition: all 0.3s ease 0s;
-  box-shadow: 5px 5px 40px #290146;
+  box-shadow: 0px 0px 30px #290146;
   height: 470px;
 }
 
@@ -403,7 +405,7 @@ img.d-block.w-100.carrusel3 {
 }
 
 /* Caja flotante de articulo agregado al carrito*/
-.floatingAlert {
+.floatingAlert, .floatingAlertForm {
   display: none;
   position: fixed;
   color: #e5e5e5;
@@ -440,7 +442,7 @@ img.d-block.w-100.carrusel3 {
   margin: 10px 30px;
   font-weight: 300;
   transition: all 0.3s ease 0s;
-  box-shadow: 5px 5px 40px #290146;
+  box-shadow: 0px 0px 40px #290146;
 }
 
 .cuerpo-secciones__sucursales__alcorta:hover {
@@ -466,7 +468,7 @@ img.d-block.w-100.carrusel3 {
   margin: 10px;
   font-weight: 300;
   transition: all 0.3s ease 0s;
-  box-shadow: 5px 5px 40px #290146;
+  box-shadow: 0px 0px 40px #290146;
 }
 
 .cuerpo-secciones__sucursales__palermo:hover {
@@ -501,6 +503,7 @@ img.d-block.w-100.carrusel3 {
   border-top-right-radius: 25px;
   color: #16302F;
   background: #cafaff;
+  box-shadow: 0px 2px 20px #290146;
 }
 
 .ftr.container-fluid .footer__contacto {
@@ -570,7 +573,7 @@ img.d-block.w-100.carrusel3 {
   border: 0;
   border-radius: 20px;
   padding: 0.4em 0.5em;
-  box-shadow: 3px 3px 10px #290146;
+  box-shadow: 0px 0px 15px #290146;
 }
 
 .ftr.container-fluid .footer__redes ul li img {
@@ -679,7 +682,7 @@ img.d-block.w-100.carrusel3 {
   background-color: #16302F;
   cursor: pointer;
   transition: all 0.3s ease 0s;
-  box-shadow: 3px 3px 10px #290146;
+  box-shadow: 0px 0px 15px #290146;
 }
 
 .modal-form:hover, .botonEnviar:hover, .botonLimpiar:hover {

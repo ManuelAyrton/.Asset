@@ -14,7 +14,7 @@ $("#eraseCart").on("click", () => {
 
     clearStorage()
 
-    $("#modalCart").append('<div class="cleanAlert">¡Carrito vaciado!</div>').css({
+    $("#modalCart").append('<div class="cleanAlert">¡El carrito esta vacío!</div>').css({
         'border-radius': '25px',
         'width': '100%',
         'text-align': '-webkit-center'
