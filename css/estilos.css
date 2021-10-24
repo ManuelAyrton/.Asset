@@ -421,7 +421,25 @@ img.d-block.w-100.carrusel3 {
 }
 
 #modalCart {
-  min-height: auto;
+  min-height: 4.5rem;
+}
+
+.cartQty {
+  align-self: center;
+}
+
+.cartQty span {
+  font-weight: 500;
+}
+
+.modal-footer span {
+  color: #290146;
+  font-size: 1.2rem;
+  font-weight: 700;
+}
+
+.cartClose:hover {
+  cursor: pointer;
 }
 
 /* SECCION SUCURSALES */

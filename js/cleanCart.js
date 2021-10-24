@@ -37,4 +37,10 @@ $(".cleanAlert").css({
         console.log("Fin de la animación cleanAlert")
 })
 
+total = 0
+
+$(totalCartPrice).empty()
+
+totalCartPrice.append("$ " + total)
+
 })

@@ -9,7 +9,7 @@ for (const Item of Items) {
 
         savedCart.push(foundProduct)
 
-        localStorage.setItem("cart", JSON.stringify(savedCart)) //Stringify de array de productos
+        localStorage.setItem("cart", JSON.stringify(savedCart)) //Stringify de array de productos.
 
         console.log(foundProduct)
 
@@ -20,8 +20,6 @@ for (const Item of Items) {
         function() {
             console.log("Fin de la animación floatingAlert")
         })
-
-
 
         cartRender()
     })
@@ -35,9 +33,3 @@ for (const Item of Items) {
 
 
 
-
-
-
-// let floatingAlert = document.createElement("div")
-        // floatingAlert.setAttribute("class","floatingAlert")
-        // floatingAlert.innerHTML = `<div>¡Producto agregado al carrito!</div>
